@@ -39,6 +39,13 @@ class SingleLinkedList:
     def appendToTail(self,d):
         self.head.appendToTail(d)
 
+    def appendToHead(self,d):
+        head = Node(d)
+        head.next = self.head
+        self.head = head
+
+
+
     def attach(self,node):
 
         n = self.head
